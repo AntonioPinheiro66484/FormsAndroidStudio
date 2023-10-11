@@ -1,4 +1,4 @@
-package com.example.appmultcomponentes
+package com.example.aplicacaoforms
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -105,7 +105,7 @@ fun SimpleCenterAlignedTopAppBar() {
             CenterAlignedTopAppBar(
                 title = {
                     Text(
-                        "Centered TopAppBar",
+                        "Cadastrar Cliente",
                         maxLines = 1,
                         overflow = TextOverflow.Ellipsis
                     )
@@ -148,7 +148,7 @@ fun SimpleTextFieldSample(label: String) {
     var text by rememberSaveable { mutableStateOf("") }
     TextField(
         value = text,
-        onValueChange = { text = "it" },
+        onValueChange = { text = "" },
         label = { Text(label) },
         singleLine = true
     )
